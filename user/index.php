@@ -17,7 +17,7 @@ $tel = $_SESSION["tel"];
 $email = $_SESSION["email"];
 $userrole = $_SESSION["userrole"];
 $fullname = $prefix . ' ' . $firstname . ' ' . $lastname;
-
+//test
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['zone_id'])) {
     $zoneId = $_POST['zone_id'];
     $sql = "SELECT pricePerDate, pricePerMonth FROM zone_detail WHERE zone_id = ?";
