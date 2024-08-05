@@ -40,7 +40,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['zone_id'])) {
     }
     exit; // Ensure no further output is sent 
 }
-
+//ss
 if (isset($_GET['category_id'])) {
     $categoryId = intval($_GET['category_id']);
     $sql = "SELECT * FROM sub_category WHERE id_category = $categoryId";
